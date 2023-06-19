@@ -64,7 +64,7 @@ function executeCommand(command) {
                     }
                 }
             }
-            if (base1 == "buy"){
+            if (base1 == "purchase"){
                 if (base2 == "cpu"){
                     if (base3 == "1"){
                         result == "Bought";
