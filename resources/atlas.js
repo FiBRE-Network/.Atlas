@@ -30,6 +30,7 @@ function executeCommand(command) {
     let rootCommand = splitCommand[0];
     let base1 = splitCommand[1];
     let base2 = splitCommand[2];
+    let base3 = splitCommand[3];
     let result;
     // Your custom command execution logic goes here
     switch (rootCommand) {
@@ -56,9 +57,20 @@ function executeCommand(command) {
             break;
         case 'upgrade':
             //COmmand : upgrade
-            if (base1 == "cost"){
+            if (base1 == "quote"){
                 if (base2 == "cpu"){
-                    result = '$200'
+                    if (base3 == '1'){
+                        result = '$200';
+                    }
+                }
+            }
+            if (base1 == "buy"){
+                if (base2 == "cpu"){
+                    if (base3 == "1"){
+                        result == "Bought";
+                        personalRigCPU = "i5 INTEL 2.3 GHz";
+                        personalFunds = personalFunds - 200;
+                    }
                 }
             }
         default:
